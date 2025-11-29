@@ -3,6 +3,8 @@ import 'package:assessment_app/api/models/airport_model.dart';
 
 typedef Json = Map<String, dynamic>;
 
+
+// calls the
 class AirportApi {
 
   AirportApi({
@@ -16,7 +18,6 @@ class AirportApi {
   Future<List<AirportModel>> getAirportList({required String offset, required String limit}) async {
 
     final queryParam = <String, dynamic>{
-      'access_key': 'db72aefa98b9186b45091e2f2404702e',
       'limit': limit,
       'offset': offset,
     };

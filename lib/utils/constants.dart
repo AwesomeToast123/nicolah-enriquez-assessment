@@ -1,3 +1,5 @@
+//All magic numbers and strings are stored here
+
 const emailText = "Email";
 const passwordText = "Password";
 const airportSpotterText = "Airport Spotter";

@@ -1,3 +1,5 @@
+//All colors are stored here
+
 import 'package:flutter/material.dart';
 
 
