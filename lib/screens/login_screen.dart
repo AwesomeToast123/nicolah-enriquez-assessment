@@ -2,6 +2,7 @@ import 'package:assessment_app/screens/home_screen.dart';
 import 'package:assessment_app/utils/constants.dart';
 import 'package:assessment_app/utils/theme.dart';
 import 'package:assessment_app/widgets/authentication_button.dart';
+import 'package:assessment_app/widgets/dialog_warning_widget.dart';
 import 'package:assessment_app/widgets/login_form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,6 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: EdgeInsets.all(paddingLogin),
         child: Column(
@@ -64,9 +66,16 @@ class _LoginScreenState extends State<LoginScreen> {
               fontSize: fontSizeButtonLogin,
               buttonText: loginText,
               callBackFunction: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const HomeScreen()),
-                );
+                if(_password.text.isEmpty && _email.text.isEmpty) {
+                    showDialog(
+                        context: context,
+                        builder:(context) => DialogWarningWidget()
+                    );
+                } else {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
+                  );
+                }
               },
               isColored: true,
               isTextColored: false,

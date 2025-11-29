@@ -8,24 +8,27 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: white,
-      body: Padding(
-        padding: EdgeInsets.all(paddingHomeScreen),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text(
-              welcomeHeaderText,
-              style: TextStyle(fontSize: fontSizeHeaderText),
-            ),
-            Text(
-              welcomeBottomHeaderText,
-              style: TextStyle(fontSize: fontSizeBottomHeaderText),
-            ),
-            Expanded(child: HomeScreenList()),
-          ],
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: white,
+        body: Padding(
+          padding: EdgeInsets.all(paddingHomeScreen),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                welcomeHeaderText,
+                style: TextStyle(fontSize: fontSizeHeaderText),
+              ),
+              Text(
+                welcomeBottomHeaderText,
+                style: TextStyle(fontSize: fontSizeBottomHeaderText),
+              ),
+              Expanded(child: HomeScreenList()),
+            ],
+          ),
         ),
       ),
     );
