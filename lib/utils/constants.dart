@@ -1,0 +1,57 @@
+const emailText = "Email";
+const passwordText = "Password";
+const airportSpotterText = "Airport Spotter";
+const loginText = "Login";
+const latitudeText = "Latitude";
+const longitudeText = "Longitude";
+const airportNameText = "AirportName";
+const countryNameText = "CountryName";
+const timeZoneText = "Timezone";
+const icacaoCodeText = "Icacao Code";
+const countryIsoText = "Country Iso";
+const geoNameIdText = "GeonameId";
+const cityIataCodeText = "CityIataCode";
+const iataCodeText = "IataCode";
+const gmtText = "GMT";
+const goBackText = "Go Back";
+const placeholderImage = "https://exciting-basket-1cebec2b8a.media.strapiapp.com/airport_f9eca3c397.webp";
+const welcomeHeaderText = "Welcome!";
+const welcomeBottomHeaderText = "Here are the top airports today";
+const blankText = '';
+
+const double paddingLogin = 15;
+const double iconLoginSize = 150;
+const double imageAirportSizeWidth = 150;
+const double imageAirportSizeHeight = 150;
+const double paddingAirportCard = 10;
+const double paddingHomeScreen = 20;
+const double paddingDetailsScreen = 20;
+const double sizedBoxAuthenticationButtonWidget = 250;
+const double sizedBoxAuthentionButtonHeight = 60;
+
+const double fontSizeAirportSpotter = 30;
+const double fontSizeLogin = 20;
+const double fontSizeButtonLogin = 25;
+const double fontSizeAirportName = 20;
+const double fontSizeBottomHeaderText = 20;
+const double fontSizeHeaderText = 40;
+const double fontSizeDetails = 20;
+
+const double gapIconTextLogin = 10;
+const double gapIconFormLogin = 40;
+const double gapHeaderFormLogin = 10;
+const double gapFormButtonLogin = 40;
+const double gapAirportCardRowSeparator = 80;
+const double gapFormLogin = 30;
+const double gapAirportCard = 20;
+const double gapDetailsScreen = 20;
+
+const double airportCardHeight = 180;
+const double airportCardWidth = 400;
+const double radiusAirportCard = 10;
+const double radiusLoginButton = 10;
+const double radiusLoginForm = 20;
+const double borderSideButtonWidth = 20;
+const double contentPaddingLoginForm = 20;
+const double elevationAuthenticationButton = 2;
+const double elevationLoginFormWidget = 10;
